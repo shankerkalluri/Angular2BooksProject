@@ -1,0 +1,95 @@
+<h2 class="text-center">Products page ...</h2>
+
+<!--<div class="row">
+	<div class="col-md-6 col-md-offset-5">
+		
+		<a [routerLink]="['PRODUCTDETAIL', {name: 'Developer'}]">Developer books</a>
+				
+	</div>
+	<div class="col-md-6 col-md-offset-5">
+		<a [routerLink]="['PRODUCTDESIGNER', {name: 'Designer'}]">Designers books</a>
+				
+	</div>
+</div>-->
+
+<br/>
+<h1>{{title}}</h1>
+<div class="row">
+
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<tbody>
+				<tr>
+					
+					<td><strong>Product Image</strong></td>
+					<td><strong>Product Name</strong></td>
+					<td><strong>Product Price</strong></td>
+					<td><strong>Product ReelaseDate</strong></td>
+					<td><strong>Product Code</strong></td>
+					<td><strong>Product Description</strong></td>
+				</tr>
+				
+				<tr *ngFor="#t of tasks">
+					<td><img [src]='t.imageUrl'
+				[style.width.px]='imgWidth'
+				[style.margin.px]='imgMargin'/></td>
+					
+					<td>{{t.dvdName}}</td>
+					<td>{{t.dvdPrice}}</td>
+					<td>{{t.dvdreleaseDate}}</td>
+					<td>{{t.dvdCode}}</td>
+					<td>{{t.dvddescription}}</td>
+				</tr>
+			</tbody>
+		</table>
+	
+	</div>
+  
+ 
+</div>
+
+<div>
+    <button (click)="back()">Back</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+	
+	<div class="col-md-6 col-md-offset-5">
+		
+		<div class="row">
+			
+			<div>
+				
+				<p>Products Content</p>
+			</div>
+			
+		</div>
+	
+		
+				
+	</div>
+</div> -->
+
+

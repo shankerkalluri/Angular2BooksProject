@@ -1,0 +1,60 @@
+
+<!--<br/>
+<br/>
+<div class="row">
+<div class="col-md-6">
+<a routerLink="/home" class="btn btn-default">
+  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Home
+</a>
+</div>
+  <div class="col-md-offset-3 col-md-3">
+    <a routerLink="/addtask" class="btn btn-warning">Add New Task</a>
+  </div>
+</div>
+<br/>
+<br/>
+<div class="row">
+    <div class="table-responsive">
+        <table class="table ">
+          <thead>
+                <th>TASK ID</th>
+                <th>TASK</th>
+                <th>STATUS</th>
+              </thead>
+            <tbody>              
+                <tr *ngFor="let t of tasks">
+                    <td>{{t.Id}}</td>
+                    <td>{{t.Title}}</td>
+                    <td><span [ngClass]="{'donestatus': t.Status=='done','pendingstatus': t.Status=='pending'}">{{t.Status | uppercase}}</span></td>   
+                    <td>
+                          <button (click)='updateStatus(t)' type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                          </button>
+                    </td>     
+                </tr>
+          </tbody>
+
+        </table>
+    </div>
+</div>-->
+
+
+<h2 class="text-center">Application LifeCycle Services</h2>
+<div class="row">
+	
+	<div class="col-md-6 col-md-offset-5">
+		
+		<div class="row">
+			<span><img src='images/AMS_Brochure_0.jpg' height="260" width="356"/></span>
+			<div>
+				<h4 style="color:#ba0c0d">Application Development and Management</h4>
+				<p>Services that Power High Performance and Enabling Business with IT</p>
+			</div>
+			
+		</div>
+	
+		<button [routerLink]="['PRODUCTBRAND', {name: 'Brand'}]">More</button>
+				
+	</div>
+</div>
+
